@@ -1,0 +1,22 @@
+"use strict";
+// Add types to this function declaration.
+function doubleThePopulation(value) {
+    return value * 2;
+}
+// Correct or remove the function calls which cause type errors.
+doubleThePopulation(5);
+doubleThePopulation(6.12); //it was a string, converted to a number
+doubleThePopulation(8526);
+// doubleThePopulation(false); removed the function call which causes type error(value is a number and cannot be called as a boolean)
+// Alter this function so the `language2` parameter is optional.
+// Hint: Check `language2` is not `undefined` before passing it to `console.log()`.
+function languagesSpoken(country, language1, language2) {
+    console.log(`The languages spoken in ${country} are:`);
+    console.log(language1);
+    if (typeof language2 === 'string') {
+        console.log(language2);
+    }
+}
+languagesSpoken("Colombia", "Spanish", "English");
+languagesSpoken("Greece", "Greek");
+languagesSpoken("New Zealand", "English", "Māori");
