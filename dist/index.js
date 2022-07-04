@@ -7,7 +7,7 @@ function doubleThePopulation(value) {
 doubleThePopulation(5);
 doubleThePopulation(6.12); //it was a string, converted to a number
 doubleThePopulation(8526);
-// doubleThePopulation(false); removed the function call which causes type error(value is a number and cannot be called as a boolean)
+// doubleThePopulation(false); commented out because the value cannot be a boolean
 // Alter this function so the `language2` parameter is optional.
 // Hint: Check `language2` is not `undefined` before passing it to `console.log()`.
 function languagesSpoken(country, language1, language2) {
