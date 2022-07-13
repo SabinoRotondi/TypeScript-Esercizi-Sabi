@@ -1,4 +1,4 @@
- const populations = [
+ const populations: number[] = [
     1_412_600_000,
     60_317_116,
     69_950_850,
@@ -13,7 +13,7 @@
 // This should fix the type error on Line 23.
 //
 // Hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
-const sumOfPopulations = populations.reduce((total, population) => {
+const sumOfPopulations = populations.reduce((total, population): number => {
     return total + population;
 }, 0);
 console.log(sumOfPopulations);
